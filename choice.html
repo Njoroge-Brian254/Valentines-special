@@ -1,0 +1,62 @@
+<html >
+<head>
+    <title>pulse</title>
+    <style>
+    body {
+      background-color: #fff0f5;
+      font-family: Arial, sans-serif;
+      text-align: center;
+      padding-top: 60px;
+    }
+    button {
+      padding: 12px 25px;
+      font-size: 16px;
+      margin: 10px;
+      border: none;
+      border-radius: 20px;
+      cursor: pointer;
+      transition: transform 0.3s ease;
+    }
+
+    .yes {
+      background-color: hotpink;
+      color: white;
+    }
+
+    .no {
+      background-color: lightgray;
+      color: black;
+    }
+
+    #response {
+      margin-top: 30px;
+      font-size: 20px;
+      color: crimson;
+    }
+  </style>
+</head>
+<body>
+      <h2>Will you be my Valentine? 💌</h2>
+
+  <button id="yesBtn" class="yes" onclick="sayYes()">Yes 💖</button>
+  <button id="noBtn" class="no" onclick="sayNo()">No 😢</button>
+
+  <div id="response"></div>
+
+  <script>
+    function sayYes() {
+      document.getElementById("response").innerHTML =
+        "Yay! You just made my heart so happy 💕🥰";
+    }
+
+    function sayNo() {
+      document.getElementById("response").innerHTML =
+        "Hmm… are you sure? 😏💘";
+
+      document.getElementById("noBtn").style.display = "none";
+      document.getElementById("yesBtn").style.transform = "scale(1.3)";
+    }
+  </script>
+    
+</body>
+</html>
