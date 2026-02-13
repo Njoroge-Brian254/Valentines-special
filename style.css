@@ -1,0 +1,29 @@
+body {
+  background-color: white;
+}
+
+h4 {
+  color: black;
+}
+
+h5 {
+  color: navy;
+}
+
+h6 {
+  color: black;
+}
+
+p {
+  color: grey;
+  font-style: normal;
+}
+
+i {
+  color: red;
+  font-style: italic;
+}
+
+marquee {
+  color: gold;
+}
